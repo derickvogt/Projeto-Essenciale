@@ -1,0 +1,17 @@
+
+:root{
+    --cor-header-mobile: linear-gradient(to bottom, #111E26, #C206AA);
+    --fonte-titulo: 'Noto Serif Lao', serif;
+    /* font-family: 'Kanit', sans-serif; */
+}
+
+.icones{
+    width: 1.5rem;
+}
+
+.icone-usuario{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -1,0 +1,37 @@
+.cabecalho{
+    background: var(--cor-header-mobile);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.botao-menu-navegacao{
+    margin-right: 36px;;
+}
+
+.container-logo{
+    /* margin-left: 50%;
+    margin-right: 50%; */
+    margin:auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 56px;
+}
+
+.logo-titulo{
+    /* margin-top: 4px; */
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
