@@ -1,10 +1,17 @@
-
+/* Configurações gerais do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Kanit:wght@300;500&display=swap');
 :root{
     --cor-header-mobile: linear-gradient(to bottom, #111E26, #C206AA);
     --fonte-titulo: 'Noto Serif Lao', serif;
-    /* font-family: 'Kanit', sans-serif; */
+    --fonte-preco: 'Inter', sans-serif;
+    --fonte-nome-produto: 'Inter', sans-serif;
+    --cor-item-container: linear-gradient(to right, #E9E9E9 0%, #FFFFFF 20%);
+    
+    --cor-preco: #027795;
+    --cor-nome-produto: #000000;
 }
 
+/* Configurações gerais sobre ícones no projeto */
 .icones{
     width: 1.5rem;
 }
@@ -15,3 +22,66 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+/* Configurações gerais sobre os elementos. */
+
+/*ul*/
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+     width: 20.5rem;
+}
+
+/*li*/
+.item-container{
+    box-sizing: border-box;
+    width: 9.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background: var(--cor-item-container);
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.item-container:nth-child(2n + 1){
+    margin-left: 0px;
+}
+
+.aparencia-link{
+    text-decoration: none;
+}
+
+.imagem-produto{
+    width: 9.75rem;
+    height: 8rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+
+
+.descricao-produto{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.nome-produto{
+    font-family: var(--fonte-nome-produto);
+    font-weight: 400;
+    color: var(--cor-nome-produto);
+    overflow: hidden;
+}
+
+.preco-produto{
+    margin-top: 0.75rem;
+    font-family: var(--fonte-preco);
+    color: var(--cor-preco);
+    font-weight: 300;
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+.preco-produto:before{
+    content: 'R$ ';
+}
+
