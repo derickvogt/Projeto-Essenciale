@@ -1,0 +1,20 @@
+
+
+
+.lista-produtos{
+    width: 20.5rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    .lista-produtos{
+        width: 900px;
+        margin: 1rem auto;
+        box-sizing: border-box;
+    
+    }
+
+}

@@ -1,0 +1,194 @@
+.cabecalho{
+    background: var(--cor-header-mobile);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: .5rem; */
+    padding: .5rem 1rem;
+}
+
+.container-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ícone navegação */
+.botao-menu-navegacao{
+    margin-right: 52px;;
+}
+
+.container-logo{
+    margin: 0px auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 56px;
+}
+
+.logo-titulo{
+    /* margin-top: 4px; */
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    font-size: 1.2rem;
+}
+
+.icones{
+ margin-right: 1rem;   
+ margin-bottom: 1rem;   
+}
+
+#input-pesqusa{
+    display: none;
+}
+
+.menu-usuario{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Menu que contém o avatar do usuário */
+.menu-texto{
+    height: 100%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--fonte-navegacao);
+    font-weight: 500;
+}
+
+.menu-texto p{
+    margin-top: .5rem;
+}
+
+/* Texto entrar */
+.menu-texto p > a{
+    margin-top: 1rem;
+    color: var(--cor-menu);
+    text-decoration: none;
+}
+
+
+
+.icone-usuario{
+    order: -1;
+}
+
+/* Sub-menu */
+.menu-header{
+    display: none;
+}
+
+/* Avatar e link entrar */
+
+
+
+/* Versão Desktop */
+@media screen and (min-width: 1024px){
+    .cabecalho{
+        background: var(--cor-header-desktop);
+        padding: 0 2rem;
+        height: 9.5rem;
+    }
+    .botao-menu-navegacao{
+        margin: 0px;
+        display: none;
+    }
+    .container-logo{
+        margin-right: auto;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logo-imagem{
+        width: 80px;
+        height: 88px;
+    }
+    
+    
+    .logo-titulo{
+        font-size: 1.5rem;
+        margin-left: .5rem;
+        margin-top:  .5rem;
+    }
+    
+    .input-box{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 2.25rem;
+        background: var(--cor-fundo-caixa-pesquisa);
+        /* background-color: blue; */
+        height: 2.35rem;
+        border: 0px;
+        margin-right: 2rem;
+        
+    }
+    
+    #input-pesqusa{
+        display: inline-block;
+        padding: .5rem;
+        border-radius: 0px 40px 40px 0px;
+        border: 0px;
+        outline: 0px;
+    }
+
+    .menu-header{
+        width: 45%;
+        display: flex;
+        margin: 0px auto;
+        padding-bottom: .5rem;
+    }
+
+    
+
+    .menu-texto{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Resetando as margens dos ícones de lupa e avatar */
+    .icones icone-usuario{
+        margin: 0px;
+    }
+
+    /* botão entrar */
+    .menu-texto p{
+        order: -2;
+        margin: 0px;
+        margin-right: 1rem;
+    }
+
+    .links-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link-menu{
+        color: var(--cor-menu);
+        text-decoration: none;
+        font-family: var(--fonte-navegacao);
+        font-size: var(--tamanho-fonte-menu-desktop);
+    }
+    
+
+
+}
+

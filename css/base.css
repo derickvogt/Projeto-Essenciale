@@ -1,0 +1,126 @@
+/* Configurações gerais do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Kanit:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Noto+Serif+Lao:wght@300;400;700&display=swap');
+:root{
+    --fonte-titulo: 'Noto Serif Lao', serif;
+    --fonte-navegacao: 'Noto Serif Lao', serif;
+    --fonte-preco: 'Inter', sans-serif;
+    --fonte-nome-produto: 'Inter', sans-serif;
+    
+    --cor-item-container: linear-gradient(to right, #E9E9E9 0%, #FFFFFF 20%);
+    --cor-header-mobile: linear-gradient(to bottom, #111E26, #C206AA);
+    --cor-header-desktop: linear-gradient(to bottom,#111E26 35%, #C206AA 140%);
+    --cor-fundo-caixa-pesquisa: #FFFFFF;
+    --cor-preco: #027795;
+    --cor-nome-produto: #000000;
+    --cor-menu: #FFFFFF;
+
+    --tamanho-fonte-menu-desktop: 1.125rem;
+}
+
+/* Configurações gerais sobre ícones no projeto */
+.icones{
+    width: 1.5rem;
+}
+
+.icone-usuario{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Configurações gerais sobre os elementos. */
+
+/*ul*/
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+     width: 22rem;
+}
+
+/*li*/
+.item-container{
+    box-sizing: border-box;
+    width: 9.75rem;
+    height: 12.25rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background: var(--cor-item-container);
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.item-container:nth-child(2n + 1){
+    margin-left: 0px;
+}
+
+.aparencia-link{
+    text-decoration: none;
+}
+
+.item-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.imagem-produto{
+    width: 9.75rem;
+    height: 8rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+
+/* div */
+.informacoes-produto{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* figcaption */
+.nome-produto{
+    font-family: var(--fonte-nome-produto);
+    width: 100%;
+    font-weight: 400;
+    color: var(--cor-nome-produto);
+    /* overflow: scroll; */
+    /* text-overflow: ellipsis;
+    white-space: wrap; */
+}
+
+.preco-produto{
+    padding-bottom: 3px;
+    margin-top: 0.75rem;
+    margin-right: .5rem;
+    font-family: var(--fonte-preco);
+    color: var(--cor-preco);
+    font-weight: 300;
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+.preco-produto p:before{
+    content: 'R$ ';
+}
+
+/* Versão Desktop */
+@media screen and (min-width: 1024px){
+    .icone-usuario{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .produtos-container{
+        width: 44rem;
+        margin: 0px auto;
+    }
+}
